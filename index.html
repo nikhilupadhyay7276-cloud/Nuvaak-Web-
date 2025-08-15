@@ -39,6 +39,8 @@
     }
 
     /* ===== Header / Nav ===== */
+	
+}
     .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px}
     header{
       position:sticky; top:0; z-index:60; backdrop-filter:saturate(160%) blur(12px);
@@ -49,7 +51,7 @@
 
     /* Brand to match screenshot: boxed N + wordmark */
     .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text)}
-    .wordmark{font-weight:700; letter-spacing:.2px; font-size:2.05rem}
+    .wordmark{font-weight:700; letter-spacing:.2px; font-size:2rem}
     .logo-box{width:28px; height:28px; border-radius:9px; display:grid; place-items:center;
       border:1px solid rgba(139,92,246,.9); color:rgba(139,92,246,.9); font-weight:700; font-size:.95rem;
       box-shadow:0 0 18px rgba(139,92,246,.25) inset}
@@ -151,8 +153,8 @@
   <header>
     <div class="wrap nav">
       <a href="#home" class="brand" aria-label="Nuvaak home">
-        <div class="logo-box">N</div>
-        <span class="wordmark">Nuvaak</span>
+<img src="nuvaak-logo.png" alt="Nuvaak Logo" style="height:40px; vertical-align:middle;">      
+ <span class="wordmark">Nuvaak</span>
       </a>
 
       <!-- Mobile toggle -->
@@ -257,21 +259,8 @@
           <h3>Roadmaps & Architecture</h3>
           <p class="desc">Opportunity discovery, ROI modeling, and secure platform blueprints aligned to your compliance needs.</p>
         </article>
-        <article class="card service">
-          <span class="badge">MLOps</span>
-          <h3>Evaluation & Model Ops</h3>
-          <p class="desc">Evaluation suites, observability, and continuous improvement pipelines for responsible deployment.</p>
-        </article>
-        <article class="card service">
-          <span class="badge">Data</span>
-          <h3>Data Engineering for AI</h3>
-          <p class="desc">Feature stores, vector search, and quality pipelines to keep models fresh and relevant.</p>
-        </article>
-        <article class="card service">
-          <span class="badge">Advisory</span>
-          <h3>Risk & Governance</h3>
-          <p class="desc">Policy, risk assessments, and model cards — ethics‑by‑design to meet internal and external standards.</p>
-        </article>
+       
+        
       </div>
     </div>
   </section>
@@ -333,7 +322,7 @@
                  </div>
       </div>
       <div class="card" style="padding:22px">
-        <form action="mailto:contact@nuvaak.com" method="POST" enctype="text/plain">
+        <form action="mailto:hello@nuvaak.ai" method="POST" enctype="text/plain">
           <div class="field">
             <label for="name">Your name</label>
             <input id="name" name="name" type="text" placeholder="Jane Doe" required>
@@ -363,5 +352,3 @@
   </footer>
 </body>
 </html>
-
-
